@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="X Manager is a personal workspace for mentions, posts, images, and replies. Learn about the project and how it uses X data.">
+  <meta name="theme-color" content="#244b3b">
+  <title>X Manager — Personal account management</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container">
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="X Manager home"><span class="brand-mark" aria-hidden="true">x<span>m</span></span><span>X Manager</span></a>
+      <nav aria-label="Page navigation"><a href="#about">About</a><a href="#data">Data use</a><a href="https://github.com/marinlafare" rel="noopener noreferrer">Maintainer <span aria-hidden="true">↗</span></a></nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> A PERSONAL WORKSPACE FOR X</p>
+          <h1 id="page-title">Your account.<br>A little more<br><em>intentional.</em></h1>
+          <p class="intro">A small, private workspace to follow your conversations, prepare a post, and share what you're making.</p>
+          <a class="button" href="#about">Explore the project <span aria-hidden="true">↓</span></a>
+          <p class="hero-note">One account per installation. Managed by its owner.</p>
+        </div>
+        <aside class="workflow" aria-labelledby="workflow-title">
+          <div class="workflow-heading"><p class="eyebrow">INSIDE THE WORKSPACE</p><span class="asterisk" aria-hidden="true">✳</span></div>
+          <h2 id="workflow-title">From a conversation <br>to your next idea.</h2>
+          <ol>
+            <li><span class="step" aria-hidden="true">01</span><div><h3>Catch up</h3><p>Read mentions and replies directed to your account in one place.</p></div></li>
+            <li><span class="step" aria-hidden="true">02</span><div><h3>Make something</h3><p>Compose a post or reply, attach an image, and preview it before publishing.</p></div></li>
+            <li><span class="step" aria-hidden="true">03</span><div><h3>Keep track</h3><p>Review previews, published posts, and requests that need your attention.</p></div></li>
+          </ol>
+          <div class="workflow-foot"><span class="dot" aria-hidden="true"></span> Publishing starts in preview mode.</div>
+        </aside>
+      </section>
+
+      <section id="about" class="content-section" aria-labelledby="about-title">
+        <div class="section-label"><span class="eyebrow">THE PROJECT</span><h2 id="about-title">A tool for <br>your own account.</h2></div>
+        <div class="section-copy"><p>X Manager is a personal X account-management application. Each owner runs their own private instance, connects their account with X API credentials, and manages conversations through a browser dashboard.</p><p>The current application supports account verification, collecting mentions, publishing text and images, replying to conversations, and reviewing publishing history. The owner controls when live publishing is enabled.</p></div>
+      </section>
+
+      <section id="data" class="content-section" aria-labelledby="data-title">
+        <div class="section-label"><span class="eyebrow">DATA &amp; ACCESS</span><h2 id="data-title">The context <br>behind a conversation.</h2></div>
+        <div class="section-copy"><p>The application uses account profile information and mentions or replies directed to the connected account. Relevant post text, post IDs, account identifiers, timestamps, and publishing outcomes are stored in the owner's deployment to maintain history and prevent duplicate processing.</p><p>API credentials are stored encrypted. The dashboard uses the owner's configured access controls. This public information page has no credential form, analytics scripts, or connection to the X API.</p></div>
+      </section>
+
+      <section class="planned" aria-labelledby="planned-title">
+        <div><span class="badge">PLANNED</span><h2 id="planned-title">A place for future experiments.</h2></div>
+        <p>A future version may detect selected keywords in incoming mentions or replies and respond with generated text or images. Generation will run in a separate service, so the account manager can operate independently. Automated replies are planned work and will need to meet X's applicable automation requirements.</p>
+      </section>
+    </main>
+
+    <footer><p>X Manager <span aria-hidden="true">·</span> Project information</p><a href="https://github.com/marinlafare" rel="noopener noreferrer">Maintained by @marinlafare <span aria-hidden="true">↗</span></a></footer>
+  </div>
+</body>
+</html>
