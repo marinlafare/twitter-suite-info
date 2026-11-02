@@ -45,7 +45,7 @@
 
       <section id="data" class="content-section" aria-labelledby="data-title">
         <div class="section-label"><span class="eyebrow">DATA &amp; ACCESS</span><h2 id="data-title">The context <br>behind a conversation.</h2></div>
-        <div class="section-copy"><p>The application uses account profile information and mentions or replies directed to the connected account. Relevant post text, post IDs, account identifiers, timestamps, and publishing outcomes are stored in the owner's deployment to maintain history and prevent duplicate processing.</p><p>API credentials are stored encrypted. The dashboard uses the owner's configured access controls. This public information page has no credential form, analytics scripts, or connection to the X API.</p></div>
+        <div class="section-copy"><p>The application uses account profile information and mentions or replies directed to the connected account. Relevant post text, post IDs, account identifiers, timestamps, and publishing outcomes are stored in the owner's deployment to maintain history and prevent duplicate processing.</p><p>API credentials are held only in server memory during an authenticated session. They are discarded on sign-out, expiry, or server restart; account history remains stored. The dashboard uses the owner's configured access controls. This public information page has no credential form, analytics scripts, or connection to the X API.</p></div>
       </section>
 
       <section class="planned" aria-labelledby="planned-title">
